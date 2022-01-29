@@ -1,4 +1,5 @@
-FROM alpine:3.14.3
+ARG IMAGE_FROM=alpine:3.14.3
+FROM $IMAGE_FROM
 LABEL maintainer="Markus Kosmal <code@m-ko.de>"
 
 RUN apk add --no-cache bash clamav clamav-daemon clamav-libunrar
